@@ -10,10 +10,6 @@ Welcome to MealMate, a mobile application designed to help users plan and organi
 
 3\. [Use Case Scenarios](#use-case-scenarios)
 
-## Images
-
-[Drive link: App screenshots](https://drive.google.com/drive/folders/1z-g7yKF12AMW-SaturFcymJogDtAuQ6s)
-
 ## Dependencies
 
 Ensure you have the following dependencies installed and configured before building and deploying the application.
