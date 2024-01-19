@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_light_color">#CC6C3E</color>
+    <color name="secondary_light_color">#C89D58</color>
+    <color name="primary_dark_color">#3C433C</color>
+    <color name="secondary_dark_color">#BBBBBB</color>
+    <color name="text_color">#D2D2D2</color>
+    <color name="gray">#888</color>
+    <color name="search_field_background">#D9D9D9</color>
+    <color name="light_gray">#1E1E1E</color>
+    <color name="seafoam_green">#2F5233</color>
+    <color name="red">#C12318</color>
+</resources>

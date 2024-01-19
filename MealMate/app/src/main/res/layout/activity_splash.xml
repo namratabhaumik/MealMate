@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/splash_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/splash_animation"
+            />
+
+        <RelativeLayout
+            android:id="@+id/appNameMealMate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/animation"
+            android:layout_centerHorizontal="true"
+            >
+
+            <TextView
+                android:id="@+id/meal"
+                android:text="@string/meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_light_color"
+                android:textSize="40sp"
+                />
+            <TextView
+                android:id="@+id/mate"
+                android:text="@string/mate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/meal"
+                android:textColor="#D2D2D2"
+                android:textSize="40sp"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

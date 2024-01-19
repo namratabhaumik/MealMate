@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="10dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    android:background="#F5F5F5"
+    android:layout_margin="16dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/ingt_img_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/ingt_name"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_gravity="start|top"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:text="@string/ingredient_name"-->
+<!--            android:fontFamily="serif"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="22sp"-->
+<!--            android:textStyle="bold"-->
+<!--            tools:ignore="TextSizeCheck" />-->
+        <TextView
+            android:id="@+id/ingt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="start|top"
+            android:layout_marginStart="16dp"
+            android:text="@string/ingredient_name"
+            android:fontFamily="serif"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFFFF"
+            android:background="#88000000"
+            tools:ignore="TextSizeCheck" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:layout_gravity="end|top"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:background="#88000000">
+
+            <EditText
+                android:id="@+id/ingt_qty_num"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:fontFamily="serif"
+                android:inputType="number"
+                android:minWidth="48dp"
+                android:onClick="onEditQuantity"
+                android:text="@string/ingt_qty_num"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="RelativeOverlap,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/ingt_qty_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:fontFamily="serif"
+                android:inputType="text"
+                android:minWidth="48dp"
+                android:text="@string/ingt_qty_unit"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="RelativeOverlap,TextSizeCheck" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/add_btn"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:contentDescription="@string/add_btn"
+            android:onClick="onAddButtonClick"
+            android:src="@drawable/add_btn"
+            android:text="@string/add_btn" />
+
+        <ImageView
+            android:id="@+id/subtract_btn"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="start|bottom"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="7dp"
+
+            android:clickable="true"
+            android:contentDescription="@string/subtract_btn"
+            android:onClick="onSubtractButtonClick"
+            android:src="@drawable/subtract_btn"
+            android:text="@string/subtract_btn" />
+
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

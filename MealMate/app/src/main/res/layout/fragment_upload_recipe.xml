@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/splash_background"
+    android:gravity="center"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:paddingTop="10dp"
+    tools:context=".HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/loadingPB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loading"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:lottie_rawRes="@raw/meditation"
+            android:layout_centerInParent="true"
+            android:background="@drawable/loading_background"
+            app:lottie_autoPlay="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Letting my servers know about your recipe..."
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/loading"
+            android:textColor="@color/black"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/everythingElse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        >
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:text="Upload Your Recipe!"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="30dp"
+            android:textColor="@color/primary_light_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/titleET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Enter Recipe Name.."
+            android:layout_below="@id/title"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/descriptionET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter a Short Description"
+            android:layout_below="@id/titleET"
+            android:layout_marginBottom="20dp"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/gray"
+            />
+
+        <Switch
+            android:id="@+id/vegeterianSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descriptionET"
+            android:text="Vegeterian "
+            android:layout_marginStart="5dp"
+            android:checked="true"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/selectIngredientsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vegeterianSwitch"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_background"
+            android:text="@string/select_required_ingredients"
+            android:textColor="@color/light_gray"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/instructionsET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="20"
+            android:hint="Write the instructions for your recipe. Seperate different steps with a  new line."
+            android:layout_below="@id/selectIngredientsBtn"
+            android:layout_marginBottom="20dp"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/gray"
+            />
+
+        <TextView
+            android:id="@+id/servingSizeText"
+            android:text="How many poeple would be able to enjoy your dish?"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/instructionsET"
+            />
+
+        <RelativeLayout
+            android:id="@+id/incrementSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/servingSizeText"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageButton
+                android:id="@+id/subtract_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/primary_light_color"
+                android:src="@drawable/minus_box"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                />
+
+            <TextView
+                android:id="@+id/servingSizeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25sp"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                />
+            
+            <ImageButton
+                android:id="@+id/add_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_alignParentEnd="true"
+                android:background="@color/primary_light_color"
+                android:src="@drawable/plus_box"
+                />
+            
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/timeTakenText"
+            android:text="Approximately how much time will be taken to prepare this dish? (In Minutes)"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/incrementSection"
+            />
+
+        <RelativeLayout
+            android:id="@+id/timeTakenSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timeTakenText"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageButton
+                android:id="@+id/subtract_btn_for_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/primary_light_color"
+                android:src="@drawable/minus_box"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                />
+
+            <TextView
+                android:id="@+id/servingSizeTV_for_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25sp"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                />
+
+            <ImageButton
+                android:id="@+id/add_btn_for_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_alignParentEnd="true"
+                android:background="@color/primary_light_color"
+                android:src="@drawable/plus_box"
+                />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/chooseImageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/choose_an_image_optional"
+            android:textColor="@color/light_gray"
+            android:background="@drawable/button_background"
+            android:layout_below="@id/timeTakenSection"
+            />
+
+        <ImageView
+            android:id="@+id/selectedImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:layout_below="@id/chooseImageBtn"
+            />
+
+        <ProgressBar
+            android:id="@+id/uploadProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:progressTint="@color/light_gray"
+            android:layout_below="@id/selectedImage"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/uploadBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_background"
+            android:text="@string/upload"
+            android:textColor="@color/light_gray"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/uploadProgressBar"
+            />
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>

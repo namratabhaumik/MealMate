@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/grocery_list"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <ListView
+        android:id="@+id/groceryListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"/>
+
+    <TextView
+        android:id="@+id/noGroceryItemsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_grocery_items_found"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:visibility="gone"/>
+
+    <CheckBox
+        android:id="@+id/tickmarkCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/white"
+        android:text="@string/check_in_inventory"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:checked="false"/>
+
+    <Button
+        android:id="@+id/confirmGroceryBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/seafoam_green"
+        android:textColor="@color/white"
+        android:text="@string/confirm_shopping"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

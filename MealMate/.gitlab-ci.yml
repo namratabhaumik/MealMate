@@ -1,0 +1,43 @@
+image: openjdk:11-jdk
+
+variables:
+  ANDROID_COMPILE_SDK: "34"
+  ANDROID_BUILD_TOOLS: "34.0.0"
+  ANDROID_SDK_TOOLS: "6858069_latest"
+  ANDROID_HOME: "/usr/local/android-sdk"
+
+stages:
+  - build
+  - test
+  - lint
+  - deploy
+
+before_script:
+  - apt-get update -qy
+  - apt-get install -y curl unzip
+  - curl -s "https://dl.google.com/android/repository/commandlinetools-linux-${ANDROID_SDK_TOOLS}.zip" -o "android-sdk-tools.zip"
+  - unzip "android-sdk-tools.zip" -d "$ANDROID_HOME"
+  - export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin"
+  - yes | sdkmanager --licenses
+  - sdkmanager "platform-tools" "platforms;android-${ANDROID_COMPILE_SDK}" "build-tools;${ANDROID_BUILD_TOOLS}"
+  - chmod +x gradlew
+
+build:
+  stage: build
+  script:
+    - ./gradlew assembleDebug
+
+test:
+  stage: test
+  script:
+    - ./gradlew test
+
+lint:
+  stage: lint
+  script:
+    - ./gradlew ktlintCheck
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying the Android app..."

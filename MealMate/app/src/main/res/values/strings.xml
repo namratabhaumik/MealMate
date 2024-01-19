@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">MealMate</string>
+    <string name="meal">Meal</string>
+    <string name="mate">Mate</string>
+    <string name="add_btn">ADD</string>
+    <string name="people_qty_id">1</string>
+    <string name="edit_btn">EDIT</string>
+    <string name="people_txt_id">People</string>
+    <string name="ingredient_name">Ingredient Name</string>
+    <string name="Ing_qty_id">Qty:</string>
+    <string name="start_recommending">Start Recommending</string>
+    <string name="login">LOGIN</string>
+    <string name="register">New? CREATE ACCOUNT</string>
+    <string name="or_sign_in_using">OR SIGN IN USING   </string>
+    <string name="open_side_panel">Open Side Panel</string>
+    <string-array name="accnt_mgmt">
+        <item>Grocery Planner</item>
+        <item>Favorite recipes</item>
+        <item>My Recipes</item>
+        <item>Recipes shared with you</item>
+        <item>Your Profile</item>
+        <item>Downloads</item>
+        <item>Log Out</item>
+    </string-array>
+    <!--    DAY NAMES    -->
+    <string name="sunday">SUN</string>
+    <string name="monday">MON</string>
+    <string name="tuesday">TUE</string>
+    <string name="wednesday">WED</string>
+    <string name="thursday">THUR</string>
+    <string name="friday">FRI</string>
+    <string name="saturday">SAT</string>
+
+    <string name="no_of_people">No of people</string>
+    <string name="subtract_btn">SUBTRACT</string>
+    <string name="ingt_qty_num">0</string>
+    <string name="ingt_qty_unit">units</string>
+    <string name="forward_btn">forward_btn</string>
+    <string name="back_btn">back_btn</string>
+    <string name="category_name">Category Name</string>
+    <string name="selected_ingredients">Selected Ingredients</string>
+    <string name="forgot_password">FORGOT PASSWORD?</string>
+    <string name="register_text">REGISTER</string>
+    <string name="validating">Validating..</string>
+    <string name="step_1">Take out a pot, add one cup water and put it on a stove!</string>
+    <string name="step_2">Add one tablespoon tea leaves and two table spoons sugar! Wait for the tea leaves to leave colour..</string>
+    <string name="step_3">Add two cups milk. Wait for it to boil..</string>
+    <string name="step_4">Your tea is ready! Pour it out in a cup through a strainer and enjoy!</string>
+    <string name="step_1_text">Step 1</string>
+    <string name="add_your_own_recipe">Add your own recipe!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="swipe_for_next_or_previous_steps">Swipe for next or previous steps!</string>
+    <string name="new_meal">New Meal</string>
+    <string name="select_required_ingredients">Select Required Ingredients</string>
+    <string name="done">DONE</string>
+    <string name="upload">UPLOAD</string>
+    <string name="choose_an_image_optional">Choose an image (Optional)</string>
+    <string name="search_for_recipes">Search for recipes</string>
+    <string name="veg">Veg</string>
+    <string name="no_matching_recipes_found">No matching recipes found!</string>
+    <string name="cancel">CANCEL</string>
+    <string name="share">SHARE</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="serving_size">Serving Size</string>
+    <string name="recipe_name">Recipe Name</string>
+    <string name="enter_serving_size">Enter Serving Size</string>
+    <string name="update">Update</string>
+    <string name="close">Close</string>
+    <string name="edit_serving_size">Edit Serving Size</string>
+    <string name="no_meal_plan_found">No meal plan found.</string>
+    <string name="open_date_picker">Open Date Picker</string>
+    <string name="grocery_list">Grocery List</string>
+    <string name="meals_list">Meals List</string>
+    <string name="proceed_to_cart">PROCEED TO CART</string>
+    <string name="confirm_shopping">CONFIRM SHOPPING</string>
+    <string name="view_details">View Details</string>
+    <string name="no_meal_plans_found_for_dates">No pending meal plans found for selected date range.</string>
+    <string name="no_grocery_found_for_selected_dates">No pending grocery found for the selected date range.</string>
+    <string name="check_in_inventory">Check in Inventory</string>
+    <string name="no_grocery_items_found">No grocery items found.</string>
+    <string name="my_recipes">My Recipes</string>
+    <string name="recipe_image">Recipe Image</string>
+    <string name="pizza_emoji">🍕</string>
+    <string name="delete_recipe">Delete Recipe</string>
+    <string name="update_inventory">UPDATE INVENTORY</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="are_you_sure_you_want_to_update_your_inventory_with_the_following_ingredients">Are you sure you want to update your inventory with the following ingredients?</string>
+</resources>

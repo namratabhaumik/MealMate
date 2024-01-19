@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/calender_item_background"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/recipeImageView"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounded_image_bg"
+        android:layout_alignParentStart="true"
+        android:clipToOutline="true"/>
+
+    <TextView
+        android:id="@+id/recipeNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/recipeImageView"
+        android:layout_marginStart="5dp"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/servingSizeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recipeNameTextView"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/recipeImageView"
+        android:textSize="14sp"/>
+
+    <ImageButton
+        android:id="@+id/editRecipeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/edit_icon"
+        android:layout_alignParentEnd="true"
+        android:padding="3dp"
+        android:background="@color/primary_light_color"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"/>
+</RelativeLayout>

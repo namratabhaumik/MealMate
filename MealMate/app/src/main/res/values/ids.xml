@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="ingt_img_id" type="id" />
+    <item name="ingt_name" type="id" />
+    <item name="ingt_qty_id" type="id" />
+    <item name="cook_qty_id" type="id" />
+    <item name="add_btn" type="id" />
+    <item name="edit_btn" type="id" />
+</resources>

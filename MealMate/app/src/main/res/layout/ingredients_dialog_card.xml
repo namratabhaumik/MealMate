@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/home_card_background"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/textViews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:id="@+id/ingredientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POTATOES"
+            android:layout_marginStart="5dp"
+            android:layout_weight="3"
+            />
+
+        <TextView
+            android:id="@+id/ingredientCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:textAlignment="viewEnd"
+            />
+
+        <TextView
+            android:id="@+id/unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="1dp"
+            android:text="Gms"
+            android:layout_weight="1"
+            android:textAlignment="viewStart"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViews"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        >
+
+        <ImageButton
+            android:id="@+id/decrementBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/decrement_icon"
+            />
+
+        <ImageButton
+            android:id="@+id/incrementBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/increment_icon"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

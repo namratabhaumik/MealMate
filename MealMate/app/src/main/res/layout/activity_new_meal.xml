@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAddMealType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white"
+        android:text="Choose Meal Type"/>
+
+    <LinearLayout
+        android:id="@+id/mealTypeTitle"
+        android:layout_below="@+id/btnAddMealType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp"
+            android:text="Meal Type:"/>
+        <TextView
+            android:id="@+id/mealTypeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"/>
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSearchRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mealTypeTitle"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:padding="5dp"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:text="Search Recipe"/>
+
+    <ListView
+        android:id="@+id/newRecipesList"
+        android:layout_below="@+id/btnSearchRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSaveMealPlan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"
+            android:text="Save"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@drawable/button_background_secondary"
+            android:text="Cancel"/>
+    </LinearLayout>
+
+</RelativeLayout>

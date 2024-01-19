@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/primary_light_color"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/registerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/card_background">
+
+        <RelativeLayout
+            android:id="@+id/mealMateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true">
+            <TextView
+                android:id="@+id/mealText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:textColor="@color/primary_light_color"
+                android:text="@string/meal"/>
+            <TextView
+                android:id="@+id/mateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/mealText"
+                android:textSize="40sp"
+                android:textColor="@color/text_color"
+                android:text="@string/mate"/>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/nameET"
+            android:background="@drawable/edittext_background"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="13dp"
+            android:textSize="20sp"
+            android:hint="Your Name"
+            android:inputType="textCapWords"
+            android:textColorHint="@color/light_gray"
+            android:textColor="@color/light_gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/emailET"
+            />
+
+        <EditText
+            android:id="@+id/emailET"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="13dp"
+            android:textSize="20sp"
+            android:hint="Email"
+            android:textColorHint="@color/light_gray"
+            android:textColor="@color/light_gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/passwordET"
+            />
+
+        <EditText
+            android:id="@+id/passwordET"
+            android:background="@drawable/edittext_background"
+            android:layout_margin="10dp"
+            android:padding="13dp"
+            android:textSize="20sp"
+            android:textColor="@color/light_gray"
+            android:hint="Password"
+            android:textColorHint="@color/light_gray"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/registerBtn"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/registerBtn"
+            android:text="@string/register_text"
+            android:background="@drawable/button_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_gray"
+            android:textSize="18sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="70dp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

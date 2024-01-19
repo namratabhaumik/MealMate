@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/mealMateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true">
+
+                <TextView
+                    android:id="@+id/favoriteTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/primary_light_color"
+                    android:layout_gravity="center"
+                    android:text="Favorite"
+                    android:contentDescription="Heading for FAVORITE RECIPES"
+                    />
+
+                <TextView
+                    android:id="@+id/recipesTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:layout_toEndOf="@+id/favoriteTextView"
+                    android:textColor="@color/text_color"
+                    android:layout_gravity="center"
+                    android:text="Recipes"
+                    android:contentDescription="Heading for FAVORITE RECIPES"
+                    />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_favorite_recipes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                />
+
+        </LinearLayout>
+
+</RelativeLayout>

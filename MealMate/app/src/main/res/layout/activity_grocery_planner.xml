@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/card_background"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/openDatePickerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:background="@drawable/button_background"
+        android:text="@string/open_date_picker"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/grocery_list"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <ListView
+        android:id="@+id/groceryListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
+
+    <TextView
+        android:id="@+id/noGroceryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_grocery_found_for_selected_dates"
+        android:textSize="18sp"
+        android:layout_weight="1"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/meals_list"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <ListView
+        android:id="@+id/mealPlansListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/noMealPlansTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_meal_plans_found_for_dates"
+        android:textSize="18sp"
+        android:layout_weight="1"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addShoppingBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:padding="5dp"
+        android:background="@drawable/button_background_secondary"
+        android:textColor="@color/white"
+        android:text="@string/proceed_to_cart"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>
