@@ -2,6 +2,8 @@
 
 Welcome to MealMate, a mobile application designed to help users plan and organize their meals. This README provides comprehensive documentation for building, deploying, and using the application.
 
+Check out [Demonstration videos](https://github.com/namratabhaumik/MealMate/tree/master/Demonstration%20videos)!
+
 ## Table of Contents
 
 1\. [Dependencies](#dependencies)
