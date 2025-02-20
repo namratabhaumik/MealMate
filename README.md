@@ -2,15 +2,32 @@
 
 Welcome to MealMate, a mobile application designed to help users plan and organize their meals. This README provides comprehensive documentation for building, deploying, and using the application.
 
-Check out [Demonstration videos](https://github.com/namratabhaumik/MealMate/tree/master/Demonstration%20videos)!
+Please don't hesitate to download and check out the [demonstration videos](https://github.com/namratabhaumik/MealMate/tree/master/Demonstration%20videos)! (Screenshots added below for reference)
 
 ## Table of Contents
 
-1\. [Dependencies](#dependencies)
+1\. [Screenshots](#screenshots)
 
-2\. [Build and Deploy](#build-and-deploy)
+2\. [Dependencies](#dependencies)
 
-3\. [Use Case Scenarios](#use-case-scenarios)
+3\. [Build and Deploy](#build-and-deploy)
+
+4\. [Use Case Scenarios](#use-case-scenarios)
+
+## Screenshots
+<p align="center"><img src="https://github.com/user-attachments/assets/e9fd90b5-112d-41df-89b3-b0f7d915f0a6" alt><br><em>Home Screen</em></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/ad230384-fda2-4a69-85a0-657e6ca0a3be" alt><br><em>Instructions Screen</em></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/8c3f2f78-68f6-4ed9-a9c6-4ede8d2f797c" alt><br><em>Meal And Grocery Planner Screen (Part 1)</em></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/47a9448c-4e8c-458e-9375-dba33a1d257f" alt><br><em>Meal And Grocery Planner Screen (Part 2)</em></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/9a09b851-8987-48e8-8208-84ae08e86119" alt><br><em>Meal And Grocery Planner Screen (Part 3)</em></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/f94e9670-6371-4e02-a152-f392fb793b58" alt><br><em>Edit Recipe Screen</em></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/a7cfcea2-b1a2-4f45-95bd-fe81edc3df54" alt><br><em>Search Recipe Screen</em></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/e410a0d9-2dd1-415e-9a1a-0dbc9311f319" alt><br><em>Share Recipe Screen (Part 1)</em></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/1b9f1e2b-3068-4e18-9cba-fbfbfb315606" alt><br><em>Share Recipe Screen (Part 2)</em></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/25fbca79-c416-47de-9264-b757472f6a2a" alt><br><em>Share Recipe Screen (Part 3)</em></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/a376d533-042c-4d9d-a018-1072766b01aa" alt><br><em>Upload Recipe Screen (Part 1)</em></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/c217355a-759a-421a-83a1-3f0a9fd7ddd3" alt><br><em>Upload Recipe Screen (Part 2)</em></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/2fccd8f4-3f49-4ce1-af99-9df45f7023f1" alt><br><em>Upload Recipe Screen (Part 3)</em></p>
 
 ## Dependencies
 
