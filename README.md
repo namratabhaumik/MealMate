@@ -4,6 +4,10 @@ Welcome to MealMate, a mobile application designed to help users plan and organi
 
 Please don't hesitate to download and check out the [demonstration videos](https://github.com/namratabhaumik/MealMate/tree/master/Demonstration%20videos)! (Screenshots added below for reference)
 
+## Medium Link
+
+[Cooking Up Success: Inside the Development of MealMate](https://namrata-bhaumik.medium.com/cooking-up-success-inside-the-development-of-mealmate-3f387f595d4b?source=friends_link&sk=53b9d742ec21e75763da5c950029639f)
+
 ## Table of Contents
 
 1\. [Screenshots](#screenshots)
